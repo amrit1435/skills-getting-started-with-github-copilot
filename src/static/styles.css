@@ -59,19 +59,100 @@ section h3 {
 
 .activity-card {
   margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  padding: 16px;
+  border: 1px solid #dbe3f0;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #f8fbff 0%, #f3f7ff 100%);
+  box-shadow: 0 2px 8px rgba(26, 35, 126, 0.08);
+}
+
+.activity-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
 }
 
 .activity-card h4 {
-  margin-bottom: 10px;
   color: #0066cc;
+  margin: 0;
+}
+
+.availability-badge {
+  display: inline-block;
+  background-color: #e8f1ff;
+  color: #1a237e;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.activity-description {
+  margin-bottom: 8px;
+  color: #4b5563;
 }
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.participants-section {
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+}
+
+.participants-section h5 {
+  margin-bottom: 8px;
+  color: #1a237e;
+}
+
+.participants-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.participants-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background-color: #f5f7ff;
+  color: #374151;
+  font-size: 0.95rem;
+}
+
+.participants-list {
+  list-style: none;
+}
+
+.participant-remove {
+  border: none;
+  background: transparent;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 0.95rem;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.participant-remove:hover {
+  background-color: #fee2e2;
+}
+
+.participants-list li.empty {
+  color: #6b7280;
+  font-style: italic;
+  background-color: #f9fafb;
 }
 
 .form-group {
